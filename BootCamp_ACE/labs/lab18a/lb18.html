@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LAB18: Ninja kick</title>
+    <meta charset="utf-8">
+    <h1 style="color:Tomato;"><center>LAB 18: Ninja kick!</center></h1>
+    <link href="lb18.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="n1">
+      <center>
+      <p id="Ninja_1">
+        <img src="ninja1.jpg" width="200px">
+      </p>
+      <button id="change" onClick="ninja1()" type="button">Yoooooo</button>
+      <br>
+      <iframe id="myvideo" width="200" height="100" src="https://www.youtube.com/embed/JEHA23jIK-o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </center>
+      </div>
+      <div class="n2">
+      <center>
+      <p id="Ninja_2">
+        <img src="ninja2.jpg" width="200px">
+      </p>
+      <button id="change" onClick="ninja2()" type="button">Ninja sound 2</button>
+      <br>
+      
+      </center>
+      </div>
+      <!-- <button onclick="enableAutoplay()" type="button">Enable autoplay</button>
+<button onclick="disableAutoplay()" type="button">Disable autoplay</button>
+<button onclick="checkAutoplay()" type="button">Check autoplay status</button><br>  -->
+
+<!-- <video id="myVideo" width="320" height="176" controls="controls">
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video> -->
+
+<script>
+var vid = document.getElementById("myvideo");
+function enableAutoplay() { 
+  vid.autoplay = true;
+  vid.load();
+}
+
+// function disableAutoplay() { 
+//   vid.autoplay = false;
+//   vid.load();
+// } 
+
+// function checkAutoplay() { 
+//   alert(vid.autoplay);
+// } 
+</script> 
+
+<!-- <p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p> -->
+
+<!-- </body> 
+</html> -->
+
+      <div>
+       <script>
+         function ninja1()      
+          {
+            document.getElementById('Ninja_1').innerHTML="<h1><span>What are Ninjutsu and Ninja?</h1><br><h3>Most people imagine that ninjas flew through the sky and disappeared, like Superman, waving ninja swords around, sneaking into the enemy ranks and assassinating generals... This is a mistaken image of the ninja introduced by movies and comic books. The jobs of a ninja are divided into the two main categories of performing espionage and strategy. The methodology for performing espionage and strategy is Ninjutsu. Espionage is similar to the job of modern spies, wherein one carefully gathers intelligence about the enemy and analyzes its military strength.</span></h3>";
+          }
+          function ninja2()      
+          {
+            document.getElementById('Ninja_2').innerHTML="<h1><span>Origins of Iga-ryu Ninjutsu and the history of Iga</h1><br><h3>
+            From when did Ninja, who worked in the world of shadows, exist? Those roots are found in the “art of warfare” that began around 4000 B.C. in Indian culture, was passed to the Chinese mainland, and around the 6th century, passed through the Korean peninsula and crossed over to Japan.
+            In that period, a man name Otomono Sahito, who was used by ruler Shotoku Taishi, is said to be the root of the Ninja.
+            </span></h3>";
+          </script>
+          
+        </div>
+        
+        
+  </body>
+</html>

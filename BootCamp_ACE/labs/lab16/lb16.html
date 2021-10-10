@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LAB16: Compare Numbers</title>
+    <meta charset="utf-8">
+  </head>
+  <body style=background-color:#5F9EA0>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <h2><center>LAB 16</center></h2>
+    <br><br><br><br><br><br><br>
+    <h1><center>Please Enter 2 Numbers</center></h1>
+    <form name="picknumbers"><center>
+      Number 1:
+      <input type="number" id="number1"><br>
+      Number 2:
+      <input type="number" id="number2"><br>
+      <br><br>
+      <input type="button" value="n1=n2?" onclick="equalcomp()">
+      <input type="button" value="n1>n2?" onclick="greater()">
+      <input type="button" value="n1<n2?" onclick="smaller()">
+      <input type="button" value="n1>=n2?" onclick="greaterequal()">
+      <input type="button" value="n1<=n2?" onclick="smallerequal()">
+      <input type="button" value="n1!=n2?" onclick="notequal()">
+      </center></form>
+      <br><br>
+      <p><center>The Final Result is:
+      <span id="result"></span>
+      </center></p>
+      <script>
+      function equalcomp() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=(num1==num2);
+      }
+      function greater() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=(Number(num1)>Number(num2));
+      }
+      function smaller() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=Number(num1)<Number(num2);
+      }
+      function greaterequal() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=(Number(num1)>Number(num2)||Number(num1)==Number(num2));
+      }
+      function smallerequal() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=(Number(num1)<Number(num2)||Number(num1)==Number(num2));
+      }
+      function notequal() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=Number(num1)!=Number(num2);
+      }
+     
+     
+      // <form name="tipcal"><center>
+      // tip percentage:
+      // <input type="number" id="tip1"><br>
+      // bill cost:
+      // <input type="number" id="tip2"><br>
+      // <input type="button" value="Please Pay" onclick="calculationTip(total)">
+    
+      // function calculationTip(total)
+      // {
+      //   var tipPercent = document.getElementById("tip1").value;
+      //   return (total * tipPercent);
+      // }
+
+      // var billTotal=document.getElementById("tip2").value;
+      // var billTip=calculationTip(billTotal);
+      // var receipt='Total: '+billTotal+' Tip: '+billTip;
+      // document.getElementById("result").innerHTML=Number(receipt);
+      // var nominator=5;
+      // var denominator=0;
+      // if ((denominator!=0)||(nominator/denominator>0))
+      // {
+      //   document.write('Thats a valid, positive fraction');
+      // }
+      </script>
+      <!-- <form name="drive"><center>
+      What is your age:
+      <input type="number" id="driveage"><br>
+      <input type="button" value="Can I drive?" onclick="drivequalify()"> 
+      </form> -->
+      <script>
+      // var p=prompt("How old are you?");
+      // if (p<16){
+      //   document.write('Sorry, you are too young to drive.');
+      // }
+      // else if (p>=16){
+      //   document.write('You can drive if someone accompany you or you have a license.')
+      // }
+    
+      // for (var i=0; i<5; i=i+1){
+      //   document.write(i);
+      // }
+      // for (var current=100;current<200;current++){
+      //   document.write('Testing '+current);
+      //   if (current % 7 == 0){
+      //     document.write('Found it! '+current);
+      //     break;
+      //   }
+      // }
+     //====================
+    //  var myfavoritethings=['flower',12345,'sky'];
+    //  myfavoritethings[0]='fruit';
+    //  document.write(myfavoritethings+'<br>         ');
+    //  myfavoritethings[4]='music';
+    //  document.write(myfavoritethings+' <br>        ');
+    //  myfavoritethings.push('drawing');
+    //  document.write(myfavoritethings+'  <br>       ');
+    //  for (var i=0;i<myfavoritethings.length;i++){
+    //    document.write(myfavoritethings[i]);
+    //  }
+    //=======================
+    // var lizzieTheCat={
+    //   age: 18,
+    //   furColor: "grey",
+    //   likes: ["catnip","milk"],
+    //   birthday: {"month":7,"day":17,"year":1999}
+    // };
+    // var lizzieage=lizzieTheCat.age;
+    // var lizzieage=lizzieTheCat["furColor"];
+    // var lizzieage=lizzieTheCat["likes"];
+    // var lizzieage=lizzieTheCat["birthday"];
+    // var myCats=[
+    //   {name: "Lizzie",
+    //   age: 18},
+    //   {name: "Daemon",
+    //   age: 1}
+    // ];
+    // for (var i=0;i<myCats.length;i++){
+    //   var myCat=myCats[i];
+    //   document.write(myCat.name+' is '+myCat.age+' years old.<br>');
+    // }
+    //=========================
+    var lizzieTheCat={
+      age: 18,
+      furColor: 'gray',
+      meow: function(){
+        document.write('meowww');
+      },
+      eat: function(food){
+        document.write('Yum, I love '+food);
+      },
+      sleep: function (numMinutes){
+        for (var i=0;i<numMinutes; i++){
+          document.write('z');
+        }
+      }
+    };
+    lizzieTheCat.meow();
+    lizzieTheCat.eat ('brown mushy stuff');
+    lizzieTheCat.sleep(10);
+      </script>
+  </body>
+  </html>

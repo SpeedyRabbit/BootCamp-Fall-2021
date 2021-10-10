@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LAB13: Popout Your Info</title>
+    <meta charset="utf-8">
+  </head>
+  <body style=background-color:olive>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <h2><center>LAB 13</center></h2>
+    <br><br><br><br><br><br><br>
+    <h1><center>Please Enter Your Information</center></h1>
+    <form name="yourinfo"><center>
+      Your Name:
+      <input type="text" name="yourname"><br>
+      Your Phone:
+      <input type="text" name="yourphone"><br>
+      Your Email:
+      <input type="text" name="youremail"><br><br>
+      <input type="button" value="Welcome" onclick="window.alert('Hi '+document.yourinfo.yourname.value+', we will call you at '+document.yourinfo.yourphone.value+' or email you at '+document.yourinfo.youremail.value+'.');">
+      </center></form>
+  </body>
+  </html>

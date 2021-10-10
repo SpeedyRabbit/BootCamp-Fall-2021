@@ -1,0 +1,21 @@
+body {
+  background-image: url("frontpage_pic2.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+h1 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 90px;  
+  font
+}
+
+div {
+  position: max
+}
+
+div.frontpage {
+  position: relative;
+  border: 10px solid #dadee3;
+  border-style: double;
+}

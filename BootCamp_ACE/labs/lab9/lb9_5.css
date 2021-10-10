@@ -1,0 +1,37 @@
+body {
+  margin: 10px;
+  background-image: url("pokedot.jpg");
+  color:rgb(17, 57, 110);
+}
+ /*Style the header*/
+ .header {
+    background-color:rgb(172, 221, 243);
+    padding: 20px;
+    text-align: right;
+    color:rgb(22, 104, 158);
+ }
+ /*Style the top navigation bar*/
+ .topnav {
+    overflow: scroll;
+    background-color: rgba(82, 80, 78, 0.938);
+ }
+ /*Style the topnav links*/
+ .topnav a {
+   float: none;
+   display: inline;
+   color:#fcf9fbdc;
+   text-align: left;
+   padding: 14px 16px;
+   text-decoration: dotted;
+ }
+ /*Change color on hover*/
+ .topnav a:hover {
+   background-color: rgba(114, 129, 161, 0.747);
+   color:rgb(239, 243, 8);
+ }
+ /*Create three equal columns that floats next to each other*/
+ .column {
+   float: left;
+   width: 30%;
+   padding: 15px;
+ }

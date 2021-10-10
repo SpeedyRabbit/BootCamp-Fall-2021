@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LAB14: Arithmetic Operators</title>
+    <meta charset="utf-8">
+  </head>
+  <body style=background-color:lightblue>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <h2><center>LAB 14</center></h2>
+    <br><br><br><br><br><br><br>
+    <h1><center>Please Enter 2 Numbers</center></h1>
+    <form name="picknumbers"><center>
+      Number 1:
+      <input type="number" id="number1"><br>
+      Number 2:
+      <input type="number" id="number2"><br>
+      <br><br>
+      <input type="button" value="n1+n2" onclick="adding()">
+      <input type="button" value="n1-n2" onclick="subtracting()">
+      <input type="button" value="n1*n2" onclick="multiplicating()">
+      <input type="button" value="n1/n2" onclick="dividing()">
+      </center></form>
+      <br><br>
+      <p><center>The Final Result is:
+      <span id="result"></span>
+      </center></p>
+      <script>
+      function adding() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=Number(num1)+Number(num2);
+      }
+      function subtracting() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=Number(num1)-Number(num2);
+      }
+      function multiplicating() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=Number(num1)*Number(num2);
+      }
+      function dividing() 
+      {
+      num1=document.getElementById("number1").value;
+      num2=document.getElementById("number2").value;
+      document.getElementById("result").innerHTML=Number(num1)/Number(num2);
+      }
+      </script>
+  </body>
+  </html>

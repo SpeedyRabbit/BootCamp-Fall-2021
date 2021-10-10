@@ -1,0 +1,36 @@
+body {
+  margin: 10px;
+  background:pink;
+}
+ /*Style the header*/
+ .header {
+    background-color:#eb1d1d;
+    padding: 20px;
+    text-align: center;
+ }
+ /*Style the top navigation bar*/
+ .topnav {
+    overflow: hidden;
+    background-color: rgb(230, 134, 25);
+ }
+ /*Style the topnav links*/
+ .topnav a {
+   float: left;
+   display: block;
+   color:#ecb7df;
+   text-align: left;
+   padding: 14px 16px;
+   text-decoration: dotted;
+ }
+ /*Change color on hover*/
+ .topnav a:hover {
+   background-color: rgb(95, 139, 233);
+   color:black;
+ }
+ /*Create three equal columns that floats next to each other*/
+ .column {
+   float: left;
+   width: 30%;
+   padding: 15px;
+ }
+ 
