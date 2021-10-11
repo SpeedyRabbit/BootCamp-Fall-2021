@@ -1,21 +1,31 @@
 body {
   background-image: url("frontpage_pic2.jpg");
-  background-repeat: no-repeat;
-  background-position: right top;
+  background-size: cover;
 }
 
 h1 {
   font-family: 'Abril Fatface', serif;
-  font-size: 90px;  
-  font
-}
-
-div {
-  position: max
+  font-size: 80px;
 }
 
 div.frontpage {
   position: relative;
   border: 10px solid #dadee3;
   border-style: double;
+  margin: auto;
 }
+
+@keyframes rotateface {
+  100% {transform: rotate(-20deg);}
+}
+
+
+div#myface {
+  transform: rotate(20deg);
+  animation: rotateface 3s infinite alternate-reverse;
+}
+
+/* div.column {
+   width: 100%;
+   padding: 15px;
+} */
