@@ -1,0 +1,29 @@
+body {
+  background-image: url("lab4_background2.jpg");
+  background-size: cover;
+}
+
+
+div#HW_content {
+  position: relative;
+  border-style: solid;
+  width: 1000px;
+  margin: auto;
+  border: 4px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#myface {
+  height: 350px;
+}
+
+#icon {
+  width: 450px;
+  padding: 5px;
+}
+
+#icon:hover {
+  transform: rotate(360deg);
+  transition-duration: 5s;
+  }
